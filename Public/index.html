@@ -2,11 +2,44 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Static File</title>
+	<title>Chat app with node and socket.io</title>
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Socket.io -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>
+	<!-- Custom JS -->
+	<script type="text/javascript" src="scripts.js"></script>
 </head>
 <body>
 
-	<h1>Sanity Check</h1>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-auto">
+				<h1>ChatApp</h1>
+					
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-auto" id="users">
+				<!-- All connected User will go here -->
+			</div>
+			<div class="col-sm" id="messages">
+				<!-- All messages will go here -->
+
+			</div>
+			<div class="col-sm-12 text-center">
+				<form id="submit-message">
+					<input type="text" id="new-message">
+					<button class="btn btn-success">
+						Send!
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
 	
 </body>
 </html>
